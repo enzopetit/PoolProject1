@@ -28,7 +28,6 @@
         char *color;
         int x;
         int y;
-        int color;
     } play2_t;
 
     typedef struct map {
@@ -37,7 +36,6 @@
         int victory_conditions;
         char **map;
     } map_t;
-
 
     typedef struct data {
         map_t *m;
