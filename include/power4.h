@@ -43,4 +43,12 @@
         play2_t *p2;
     } data_t;
 
+    void map_generator(data_t *d);
+
+    #define map d->m->map
+    #define rows d->m->rows
+    #define cols d->m->cols
+    #define ERROR 84
+    #define SUCCESS 0
+
 #endif /* !POWER4_H_ */

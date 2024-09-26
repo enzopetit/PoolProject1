@@ -7,7 +7,7 @@
 
 #include "power4.h"
 
-data_t *init_data(void)
+static data_t *init_data(void)
 {
     data_t *d = malloc(sizeof(data_t));
     d->m = malloc(sizeof(map_t));
@@ -24,6 +24,6 @@ int main(void)
         printf("Error: data memory allocation error\n");
         return 84;
     }
-
+    map_generator(d);
     return 0;
 }
